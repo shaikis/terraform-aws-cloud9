@@ -8,7 +8,5 @@ module "cloud9" {
     region = "eu-west-1"
     cloud9_instance_type = "t2.micro"
     automatic_stop_time_minutes = 30
-    username = [ismails, xyz]
-
-}
+    }
 ```

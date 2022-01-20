@@ -25,7 +25,7 @@ data "aws_security_group" "cloud9_secgroup" {
     filter {
     name = "tag:aws:cloud9:environment"
         values = [
-          aws_cloud9_environment_ec2.cloud9_instance.id
+          aws_cloud9_environment_ec2.this.id
         ]
     }
 }

@@ -12,3 +12,7 @@ variable "cloud9_instance_type" {
 variable "automatic_stop_time_minutes" {
     default = 30
 }
+
+variable "username" {
+    type = list
+}

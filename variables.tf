@@ -17,5 +17,5 @@ variable "automatic_stop_time_minutes" {
 
 variable "username" {
     type = list
-    default = []
+    default = [cloud9, kops]
 }

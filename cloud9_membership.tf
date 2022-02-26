@@ -6,7 +6,7 @@ resource "aws_iam_user" "this" {
 resource "aws_cloud9_environment_membership" "this" {
     count = "${length(var.username)}"
     environment_id = aws_cloud9_environment_ec2.this.id
-    permissions    = "Read Only"
+    permissions    = "read-write"
     user_arn       = "${aws_iam_user.this.*.arn}"
 }
 

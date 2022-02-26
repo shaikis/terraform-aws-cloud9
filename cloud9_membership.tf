@@ -1,6 +1,6 @@
 resource "aws_iam_user" "this" {
-    count = "${length(var.username)}"
-    name = "${element(var.username,count.index )}"
+    count = length(var.username)
+    name =  element(var.username,count.index )
 }
 
 #resource "aws_cloud9_environment_membership" "this" {
